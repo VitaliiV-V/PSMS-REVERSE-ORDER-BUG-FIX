@@ -1,0 +1,13 @@
+{
+  "name": "PSMS REVERSE-ORDER BUG FIX",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "",
+  "content_scripts": [
+    {
+      "matches": ["https://pcms.algocode.ru/*", "http://pcms.algocode.ru/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
