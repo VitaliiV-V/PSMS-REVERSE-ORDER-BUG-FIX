@@ -22,7 +22,7 @@ function penis() {
     let Ar = [];
 
     for (let i = 0; i < parts.length - 1; i++) {
-        if ((parts[i].includes("default-order") || parts[i].includes("reverse-order") || parts[i].includes("ce")) && !parts[i].includes("Решения")) {
+        if ((parts[i].includes("default-order") || parts[i].includes("reverse-order") || parts[i].includes("ce")) && (!parts[i].includes("Решения") && !parts[i].includes("Runs"))) {
             let x = parts[i];
             x = x.replaceAll("default-order", "reverse-order");
             x = x.replaceAll("reverse-order", 'reverse-order" style="display: none;"');
