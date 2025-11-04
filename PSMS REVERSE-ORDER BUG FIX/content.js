@@ -12,7 +12,7 @@ function penis() {
         }
     }
     localStorage.setItem("myFlag", flag);
-    if(!pageHTML.includes("балл")) {
+    if(!pageHTML.includes("балл") && !pageHTML.includes("score")) {
         return;
     }
     let parts = pageHTML.split("</tr>");
